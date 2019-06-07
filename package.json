@@ -1,0 +1,18 @@
+{
+  "name": "eslint-config",
+  "version": "0.0.1",
+  "description": "Personal ESLint configuration",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eslint"
+  ],
+  "author": "@mrtibbles",
+  "license": "ISC",
+  "peerDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-import": "^2.17.3"
+  }
+}
