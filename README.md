@@ -1,4 +1,4 @@
 # ESLint Configurations
 
 ## Packages
-- `@mrtibbles/esling-config` - base default (browser) configuration
+- `@raddad/esling-config` - base default (browser) configuration
