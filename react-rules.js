@@ -1,4 +1,7 @@
 module.exports = {
+  'extends': [
+    '@raddad/eslint-config'
+  ],
   'rules': {
     "jsx-quotes": ["error", "prefer-double"],
     "react/display-name": "off",
@@ -18,5 +21,12 @@ module.exports = {
     "react/react-in-jsx-scope": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn"
+  },
+  "plugins": ["react", "react-hooks"],
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "16.0"
+    }
   }
 }
