@@ -38,9 +38,9 @@ module.exports = {
       }
     ],
     'prefer-const': 'error',
-    'sort-keys': 'error',
+    'sort-keys': 'warn',
     'sort-vars': [
-      'error',
+      'warn',
       {
         'ignoreCase': true
       }
