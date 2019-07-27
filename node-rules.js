@@ -7,4 +7,37 @@ module.exports = {
     "eslint:recommended",
     "plugin:node/recommended"
   ],
+  "parserOptions": {
+    "ecmaVersion": 2019
+  },
+  "rules": {
+    "eqeqeq": ["error", "always"],
+    "keyword-spacing": [
+      "error",
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    "no-console": "off",
+    "no-irregular-whitespace": "error",
+    "no-var": "error",
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": ["block-like", "function", "return"]
+      }
+    ],
+    "prefer-const": "error",
+    "sort-keys": "warn",
+    "sort-vars": [
+      "warn",
+      {
+        "ignoreCase": true
+      }
+    ],
+    "node/no-unpublished-require": "warn",
+  }
 }
