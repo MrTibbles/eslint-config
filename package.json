@@ -1,6 +1,6 @@
 {
   "name": "@raddad/eslint-config",
-  "version": "0.0.7",
+  "version": "1.0.0",
   "description": "Personal ESLint configuration",
   "main": "index.js",
   "repository": {
@@ -14,13 +14,13 @@
   "author": "@mrtibbles",
   "license": "ISC",
   "peerDependencies": {
-    "eslint": "^5.16.0",
+    "eslint": "^6.3.0",
     "eslint-plugin-import": "^2.17.3",
     "eslint-plugin-react": "^7.13.0",
-    "eslint-plugin-react-hooks": "^1.6.0",
-    "eslint-plugin-node": "^9.1.0",
-    "@typescript-eslint/eslint-plugin": "^1.13.0",
-    "@typescript-eslint/parser": "^1.13.0",
+    "eslint-plugin-react-hooks": "^2.0.0",
+    "eslint-plugin-node": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
     "eslint-config-prettier": "^6.0.0"
   }
 }
