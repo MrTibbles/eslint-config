@@ -14,38 +14,39 @@ module.exports = {
   "plugins": [
     "import"
   ],
-  "rules": {
-    "eqeqeq": [
-      "error",
-      "always"
-    ],
-    "keyword-spacing": [
-      "error",
+  rules: {
+    'eqeqeq': ['error', 'always'],
+    'keyword-spacing': [
+      'error',
       {
-        "before": true,
-        "after": true
+        before: true,
+        after: true
       }
     ],
-    "no-console": "off",
-    "no-irregular-whitespace": "error",
-    "no-var": "error",
-    "padding-line-between-statements": [
-      "error",
+    'no-console': 'error',
+    'no-unused-vars': 'error',
+    'no-import-assign': 'error',
+    'default-case': 'error',
+    'no-irregular-whitespace': 'error',
+    'no-var': 'error',
+    'no-alert': 'error',
+    'no-labels': 'error',
+    'no-duplicate-imports': 'error',
+    'prefer-const': 'error',
+    'arrow-spacing': 'error',
+    'padding-line-between-statements': [
+      'error',
       {
-        "blankLine": "always",
-        "prev": "*",
-        "next": ["block-like", "function", "return"]
+        blankLine: 'always',
+        prev: '*',
+        next: ['block-like', 'function', 'return']
       }
     ],
-    "prefer-const": "error",
-    "sort-keys": "warn",
-    "sort-vars": [
-      "warn",
-      {
-        "ignoreCase": true
-      }
-    ],
-    "valid-jsdoc": "warn",
+    'prefer-const': 'error',
+    'valid-jsdoc': 'warn',
+    'max-depth': ['error', 3],
+    'complexity': ['error', 10],
+    'max-lines-per-function': ['error', 100],
     'import/order': [
       'error',
       {
