@@ -1,43 +1,46 @@
 module.exports = {
-  "env": {
-    "node": true,
-    "es6": true,
+  env: {
+    node: true,
+    es6: true
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:node/recommended"
-  ],
-  "parserOptions": {
-    "ecmaVersion": 2019
+  extends: ['eslint:recommended', 'plugin:node/recommended'],
+  parserOptions: {
+    ecmaVersion: 2019
   },
-  "rules": {
-    "eqeqeq": ["error", "always"],
-    "keyword-spacing": [
-      "error",
+  rules: {
+    eqeqeq: ['error', 'always'],
+    'keyword-spacing': [
+      'error',
       {
-        "before": true,
-        "after": true
+        before: true,
+        after: true
       }
     ],
-    "no-console": "off",
-    "no-irregular-whitespace": "error",
-    "no-var": "error",
-    "padding-line-between-statements": [
-      "error",
+    'no-console': 0,
+    'no-irregular-whitespace': 'error',
+    'no-var': 'error',
+    'padding-line-between-statements': [
+      'error',
       {
-        "blankLine": "always",
-        "prev": "*",
-        "next": ["block-like", "function", "return"]
+        blankLine: 'always',
+        prev: '*',
+        next: ['block-like', 'function', 'return']
       }
     ],
-    "prefer-const": "error",
-    "sort-keys": "warn",
-    "sort-vars": [
-      "warn",
+    'prefer-const': 'error',
+    'node/no-unpublished-require': 'warn',
+    'node/no-unsupported-features/es-syntax': [
+      'error',
       {
-        "ignoreCase": true
+        version: '>=12.0.0',
+        ignores: ['modules']
       }
     ],
-    "node/no-unpublished-require": "warn",
+    'node/no-missing-import': [
+      'error',
+      {
+        tryExtensions: ['.js', '.ts']
+      }
+    ]
   }
-}
+};

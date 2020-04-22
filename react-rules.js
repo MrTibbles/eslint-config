@@ -1,13 +1,13 @@
 module.exports = {
   'extends': [
-    '@raddad/eslint-config'
+    '@raddad/eslint-config',
+    'plugin:react/recommended'
   ],
   'rules': {
     "jsx-quotes": ["error", "prefer-double"],
     "react/display-name": "off",
     "react/jsx-no-duplicate-props": "error",
     "react/jsx-no-undef": "error",
-    "react/jsx-sort-props": "warn",
     "react/jsx-uses-react": "error",
     "react/jsx-uses-vars": "error",
     "react/no-danger": "error",
@@ -27,6 +27,11 @@ module.exports = {
     "react": {
       "pragma": "React",
       "version": "16.0"
+    }
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     }
   }
 }
